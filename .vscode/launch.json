@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Prak1.html",
+            "file": "c:\\Users\\wida seoulida\\Desktop\\PBW-IF-VB\\220660121107\\Praktikum\\Prak1.html"
+        }
+    ]
+}
