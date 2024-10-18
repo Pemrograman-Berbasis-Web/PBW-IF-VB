@@ -62,6 +62,13 @@ blockquote {
     border-radius: 5px;
 }
 
+.text-center2{
+    text-align: center;
+}
+.text-center3 {
+    text-align: center;
+}
+
 /* Table styles */
 table {
     width: 100%;
@@ -122,4 +129,53 @@ footer {
     height: 228px;
     width: 600px;
     margin: 20px auto;
+}
+
+/* Gaya untuk mode malam */
+body.night-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.night-mode .text-center {
+    color: white;
+}
+
+body.night-mode .container {
+    background-color: #444;
+}
+
+body.night-mode .text-center2{
+    color: black;
+}
+
+body.night-mode .text-center3{
+    color: white;
+}
+
+body.night-mode table tr, th {
+    color: white;
+}
+
+body.night-mode h2, 
+body.night-mode blockquote, 
+body.night-mode table {
+    color: #00BFFF;
+}
+
+body.night-mode a {
+    color: #00BFFF;
+}
+
+body.night-mode footer {
+    color: #ccc;
+}
+
+.theme-logo {
+    width: 40px; /* Atur ukuran logo */
+    height: auto;
+    display: block;
+    margin-left: 950px;
+    margin-top: -70px; /* Pusatkan logo */
+
 }
