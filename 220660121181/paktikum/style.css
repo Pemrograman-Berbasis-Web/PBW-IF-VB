@@ -10,9 +10,9 @@
 /* Body styles */
 body {
    
-    background-color: #282829;
+    background-color: #ffffff;
     color: #000000;
-    line-height: 1.6;
+    line-height: 1.4;
     padding: 20px;
 }
 
@@ -20,7 +20,7 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: rgb(245, 243, 230);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -40,29 +40,20 @@ h1 {
 /* Profile image styles */
 img {
     width: 200px;
-    height: 250px;
+    height: 200px;
     border-radius: 50%;
-    margin-bottom: 5px;
-    
+    margin-top: 12px;
+    margin-bottom: px;
 }
+
 
 /* Section headings */
 h2 {
     color: #000000;
     margin-top: 20px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #a9a6a6;
     padding-bottom: 5px;
-}
-
-/* Blockquote styles */
-blockquote {
-    font-style: italic;
-    margin: 20px 0 20px;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-left: 5px solid #000000;
-    border-radius: 5px;
 }
 
 /* Table styles */
@@ -75,10 +66,6 @@ th, td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ccc;
-}
-th {
-    background-color: #2980b9;
-    color: white;
 }
 
 /* List styles */
@@ -98,21 +85,20 @@ iframe {
     border-radius: 10px;
 }
 
-/* Link styles */
-a {
-    color: #2980b9;
+/* Footer section */
+a{
+    color: #000000;
     text-decoration: none; /* Remove underline */
 }
 
-/* Footer section */
 footer {
     text-align: center;
     margin: 40px 0;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #777;
-        }
+}
 
-
+      
 /* Embed audio styles */
 .audio-embed {
     height: 228px;
