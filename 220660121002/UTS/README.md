@@ -1,0 +1,2 @@
+CSS: Kode CSS  ini memberikan gaya pada elemen-elemen di halaman, termasuk body, heading, list, dan form. Ini membuat tampilan lebih bersih dan menarik.
+JavaScript: Kode JavaScript menangani pengiriman form tanpa memuat ulang halaman. Ketika form disubmit, data dikirim ke server menggunakan Fetch API. Jika berhasil, alert akan muncul dan halaman akan dimuat ulang untuk menampilkan task terbaru.
