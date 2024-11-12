@@ -1,35 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('form');
+document.addEventListener('DOMContentLoaded', function() {
+    const todoLinks = document.querySelectorAll('a');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Mencegah pengiriman form secara default
-
-        const taskInput = form.querySelector('input[name="task"]');
-        const task = taskInput.value.trim();
-
-        if (task) {
-            // Mengirim data ke server menggunakan Fetch API
-            fetch(form.action, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: new URLSearchParams(new FormData(form)).toString()
-            })
-            .then(response => response.text())
-            .then(data => {
-                // Menampilkan alert jika berhasil
-                alert('Task added successfully!');
-                // Mengosongkan input setelah menambahkan task
-                taskInput.value = '';
-                // Memuat ulang halaman untuk menampilkan task terbaru
-                location.reload();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        } else {
-            alert('Please enter a task!');
-        }
+    todoLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            if (this.textContent.includes('Delete')) {
+                const confirmation = confirm('Are you sure you want to delete this task?');
+                if (!confirmation) {
+                    event.preventDefault(); // Mencegah penghapusan jika tidak dikonfirmasi
+                }
+            }
+        });
     });
 });
