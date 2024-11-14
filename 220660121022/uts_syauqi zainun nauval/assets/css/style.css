@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12em;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+  
+
+/* Todo List Container */
+h1 {
+    color: #fdfbfb;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+a {
+    color: #0212fc;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    margin-top: 1em;
+}
+
+input[type="text"] {
+    width: 750px;
+    padding: 12px;
+    margin-right: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    padding: 12px 12px;
+    border: none;
+    background-color: #0212fc;
+    color: #ffffff;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #030303;
+}
+
+/* Notification Styling */
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px); /* Center horizontally and move it up */
+    background-color: #0212fc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 9999; /* Ensure the notification appears above other content */
+}
+
+/* Show Notification */
+.notification.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* Move the notification into view */
+}
+
+/* Optional: Error notification styling */
+.notification.error {
+    background-color: #f44336; /* Red color for error */
+}
