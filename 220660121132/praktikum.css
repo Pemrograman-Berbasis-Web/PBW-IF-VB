@@ -1,0 +1,152 @@
+/* Mengatur style untuk seluruh halaman */
+body {
+    font-family: Georgia,'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #d8adad;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style untuk judul utama */
+h1 {
+    color: #000305;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Style untuk judul bagian (h2) */
+h2 {
+    color: #161618;
+    font-size: 1.8rem;
+    margin-top: 30px;
+    border-bottom: 2px solid #0d0e0f;
+    padding-bottom: 5px;
+}
+
+/* Style untuk sub-judul (h3) */
+h3 {
+    color: #03070c;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Style untuk daftar tak terurut (ul) */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Style untuk nested list */
+ul ul {
+    margin-left: 20px;
+}
+
+/* Style untuk link */
+a {
+    text-decoration: none;
+    color: #2e2ebd;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Menambahkan emoji khusus */
+ul li a[href*="https://github.com/"]::after {
+    content: " 🔥";
+    color: #e74c3c;
+}
+
+/* Style untuk mengatur layout halaman */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #0e0808;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Body styles */
+body {
+    font-family: Georgia, Georgia, 'Times New Roman', Times, serif;
+    background-color: #265891;
+    color: #0f0b0b;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for layout */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text center class */
+.text-center {
+    text-align: center;
+}
+
+/* Main title */
+h1 {
+    color: #080808;
+    margin-bottom: 20px;
+}
+
+/* Profile image styles */
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #e0e5e9;
+}
+
+/* Section headings */
+h2 {
+    color: #010102;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0f1011;
+    padding-bottom: 5px;
+}
+
+/* Blockquote styles */
+blockquote {
+    font-style: italic;
+    margin: 10px 0 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-left: 5px solid #c4c8ca;
+    border-radius: 5px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #5263c4;
+    color: white;
+}
+
+
+

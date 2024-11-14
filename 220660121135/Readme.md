@@ -1,2 +1,1 @@
-Nama : Rio Irlandy Pusan
-220660121135
+Nama : Rio Irlandy Pusan 220660121135
