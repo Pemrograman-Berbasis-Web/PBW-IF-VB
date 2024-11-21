@@ -9,7 +9,7 @@
  */
 
 // Memanggil file TodoController.php untuk menggunakan class TodoController
-require_once 'controller/TodoController.php';
+require_once 'controllers/TodoController.php';
 
 $controller = new TodoController();
 $todos = $controller->index();
